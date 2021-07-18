@@ -1,0 +1,27 @@
+object recursion{
+def main(args:Array[String]) 
+{
+   
+	
+   printf(" Input the last number of the range starting from 1 : ");
+   var n=scala.io.StdIn.readInt()
+   
+ 
+   var sum = sumOfRange(n); 
+   print(sumOfRange(n))
+ 
+
+}
+ 
+def  sumOfRange(n:Int):Int={
+   
+   if (n == 1) 
+   {
+      return (1)
+   } else 
+   {
+      return n + sumOfRange(n - 1)
+   }
+   
+}
+}
