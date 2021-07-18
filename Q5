@@ -1,0 +1,17 @@
+object recursive{
+def main(args:Array[String])
+{
+    print("Enter the n number:")
+    var n = scala.io.StdIn.readInt();
+    print(recurSum(n))
+    
+}
+def recurSum( n:Int):Int={
+    if (n%2==0)  
+    return n + recurSum(n - 1)
+    else 
+     return n+1
+}
+ 
+
+}
