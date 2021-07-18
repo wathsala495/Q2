@@ -1,0 +1,44 @@
+object evenodd{
+def main(args:Array[String])
+{
+    var L = 10
+    var  R = 25;
+    println("Even number:")
+ 
+    
+    
+    Even(L, R);
+    print( "Odd numbers:");
+    Odd(L, R);
+}
+def Even( L:Int, R:Int):Unit={
+ 
+
+    if (R < L) {
+        return
+    }
+ 
+    
+    (R % 2 == 0 )? Even(L, R - 2): Even(L, R - 1)
+    if (R % 2 == 0) {
+        print(R+" ")
+    }
+}
+ 
+def Odd( L:Int, R:Int):Int={
+    if (R < L) {
+        return
+    }
+ 
+    
+    else if(R % 2 == 1) {
+        if Odd(L, R - 2)  true
+        else  if Odd(L, R - 1) false
+ 
+    
+    if (R % 2 == 1) {
+        print(R+" ")
+    }
+}
+}
+
